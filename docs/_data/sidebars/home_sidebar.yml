@@ -15,6 +15,15 @@ entries:
     - output: web,pdf
       title: modify
       url: modify.html
+    - output: web,pdf
+      title: matrixify
+      url: matrixify.html
+    - output: web,pdf
+      title: visualize
+      url: visualize.html
+    - output: web,pdf
+      title: analyze
+      url: analyze.html
     output: web
     title: choreo_k
   output: web

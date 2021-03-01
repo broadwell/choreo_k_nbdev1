@@ -11,6 +11,7 @@ index = {"Detector": "00_detect.ipynb",
          "in_bbox_check": "01_modify.ipynb",
          "get_intersect": "01_modify.ipynb",
          "get_union": "01_modify.ipynb",
+         "shift_figure": "01_modify.ipynb",
          "average_coords": "01_modify.ipynb",
          "count_figures_and_time": "01_modify.ipynb",
          "nose_btwn_eyes_ears_shoulders": "01_modify.ipynb",
@@ -30,10 +31,33 @@ index = {"Detector": "00_detect.ipynb",
          "TOTAL_COORDS": "01_modify.ipynb",
          "D_THRESH": "01_modify.ipynb",
          "coco_points": "01_modify.ipynb",
-         "coco_pts_short": "01_modify.ipynb"}
+         "coco_pts_short": "01_modify.ipynb",
+         "matrixify_pose": "02_matrixify.ipynb",
+         "get_pose_matrix": "02_matrixify.ipynb",
+         "get_laplacian_matrix": "02_matrixify.ipynb",
+         "compare_laplacians": "02_matrixify.ipynb",
+         "plot_poses": "03_visualize.ipynb",
+         "plot_delaunay": "03_visualize.ipynb",
+         "fig2img": "03_visualize.ipynb",
+         "excerpt_pose": "03_visualize.ipynb",
+         "overlay_poses": "03_visualize.ipynb",
+         "overlay_video": "03_visualize.ipynb",
+         "draw_figure": "03_visualize.ipynb",
+         "viz_dist_matrices": "03_visualize.ipynb",
+         "GC_INTERVAL": "03_visualize.ipynb",
+         "MIN_MOVE": "03_visualize.ipynb",
+         "MAX_MOVE": "03_visualize.ipynb",
+         "smooth_series": "04_analyze.ipynb",
+         "corr_time_series_matrix": "04_analyze.ipynb",
+         "fill_nans_scipy1": "04_analyze.ipynb",
+         "movements_time_series": "04_analyze.ipynb",
+         "process_movement_series": "04_analyze.ipynb"}
 
 modules = ["detect.py",
-           "modify.py"]
+           "modify.py",
+           "matrixify.py",
+           "visualize.py",
+           "analyze.py"]
 
 doc_url = "https://broadwell.github.io/choreo_k/"
 

@@ -2,6 +2,9 @@
   "choreo_k": {
     "Overview": "/",
     "detect": "detect.html",
-    "modify": "modify.html"
+    "modify": "modify.html",
+    "matrixify": "matrixify.html",
+    "visualize": "visualize.html",
+    "analyze": "analyze.html"
   }
 }
