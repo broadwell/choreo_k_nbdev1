@@ -40,7 +40,7 @@ nb_path: "01_modify.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="get_figure_coords" class="doc_header"><code>get_figure_coords</code><a href="https://github.com/broadwell/choreo_k/tree/main/choreo_k/modify.py#L75" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_figure_coords</code>(<strong><code>coords_and_confidence</code></strong>, <strong><code>margin</code></strong>=<em><code>0</code></em>)</p>
+<h4 id="get_figure_coords" class="doc_header"><code>get_figure_coords</code><a href="https://github.com/broadwell/choreo_k/tree/main/choreo_k/modify.py#L76" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_figure_coords</code>(<strong><code>coords_and_confidence</code></strong>, <strong><code>margin</code></strong>=<em><code>0</code></em>)</p>
 </blockquote>
 
 </div>
@@ -64,7 +64,7 @@ nb_path: "01_modify.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="flip_detections" class="doc_header"><code>flip_detections</code><a href="https://github.com/broadwell/choreo_k/tree/main/choreo_k/modify.py#L118" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>flip_detections</code>(<strong><code>input_detections</code></strong>, <strong><code>flip_y</code></strong>=<em><code>True</code></em>, <strong><code>rectify_x</code></strong>=<em><code>False</code></em>)</p>
+<h4 id="flip_detections" class="doc_header"><code>flip_detections</code><a href="https://github.com/broadwell/choreo_k/tree/main/choreo_k/modify.py#L119" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>flip_detections</code>(<strong><code>input_detections</code></strong>, <strong><code>flip_y</code></strong>=<em><code>True</code></em>, <strong><code>rectify_x</code></strong>=<em><code>False</code></em>)</p>
 </blockquote>
 <p>PIL puts the 0,0 origin for images at top left, but the
 distance matrix calculations expect it to be at the bottom left.
@@ -97,7 +97,7 @@ coords are always on stage right (viewer's left).</p>
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="zeroify_detections" class="doc_header"><code>zeroify_detections</code><a href="https://github.com/broadwell/choreo_k/tree/main/choreo_k/modify.py#L194" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>zeroify_detections</code>(<strong><code>input_detections</code></strong>, <strong><code>width</code></strong>=<em><code>None</code></em>, <strong><code>height</code></strong>=<em><code>None</code></em>)</p>
+<h4 id="zeroify_detections" class="doc_header"><code>zeroify_detections</code><a href="https://github.com/broadwell/choreo_k/tree/main/choreo_k/modify.py#L195" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>zeroify_detections</code>(<strong><code>input_detections</code></strong>, <strong><code>width</code></strong>=<em><code>None</code></em>, <strong><code>height</code></strong>=<em><code>None</code></em>)</p>
 </blockquote>
 <p>Modifies a figure's coordinates so that the corner of its bounding
 box is at 0,0. This is mostly for visualization with PIL images,
@@ -125,7 +125,7 @@ The modifications are done for all figures in a single frame.</p>
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="get_bbox" class="doc_header"><code>get_bbox</code><a href="https://github.com/broadwell/choreo_k/tree/main/choreo_k/modify.py#L240" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_bbox</code>(<strong><code>pose_coords</code></strong>, <strong><code>move_to_origin</code></strong>=<em><code>False</code></em>, <strong><code>margin</code></strong>=<em><code>0</code></em>, <strong><code>width</code></strong>=<em><code>None</code></em>, <strong><code>height</code></strong>=<em><code>None</code></em>)</p>
+<h4 id="get_bbox" class="doc_header"><code>get_bbox</code><a href="https://github.com/broadwell/choreo_k/tree/main/choreo_k/modify.py#L241" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_bbox</code>(<strong><code>pose_coords</code></strong>, <strong><code>move_to_origin</code></strong>=<em><code>False</code></em>, <strong><code>margin</code></strong>=<em><code>0</code></em>, <strong><code>width</code></strong>=<em><code>None</code></em>, <strong><code>height</code></strong>=<em><code>None</code></em>)</p>
 </blockquote>
 
 </div>
@@ -149,7 +149,7 @@ The modifications are done for all figures in a single frame.</p>
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="get_bbox_area" class="doc_header"><code>get_bbox_area</code><a href="https://github.com/broadwell/choreo_k/tree/main/choreo_k/modify.py#L261" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_bbox_area</code>(<strong><code>bbox</code></strong>)</p>
+<h4 id="get_bbox_area" class="doc_header"><code>get_bbox_area</code><a href="https://github.com/broadwell/choreo_k/tree/main/choreo_k/modify.py#L262" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_bbox_area</code>(<strong><code>bbox</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -173,7 +173,7 @@ The modifications are done for all figures in a single frame.</p>
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="in_bbox_check" class="doc_header"><code>in_bbox_check</code><a href="https://github.com/broadwell/choreo_k/tree/main/choreo_k/modify.py#L268" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>in_bbox_check</code>(<strong><code>coord</code></strong>, <strong><code>bbox</code></strong>, <strong><code>margin</code></strong>=<em><code>0.5</code></em>)</p>
+<h4 id="in_bbox_check" class="doc_header"><code>in_bbox_check</code><a href="https://github.com/broadwell/choreo_k/tree/main/choreo_k/modify.py#L269" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>in_bbox_check</code>(<strong><code>coord</code></strong>, <strong><code>bbox</code></strong>, <strong><code>margin</code></strong>=<em><code>0.5</code></em>)</p>
 </blockquote>
 
 </div>
@@ -197,7 +197,7 @@ The modifications are done for all figures in a single frame.</p>
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="get_intersect" class="doc_header"><code>get_intersect</code><a href="https://github.com/broadwell/choreo_k/tree/main/choreo_k/modify.py#L282" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_intersect</code>(<strong><code>a</code></strong>, <strong><code>b</code></strong>)</p>
+<h4 id="get_intersect" class="doc_header"><code>get_intersect</code><a href="https://github.com/broadwell/choreo_k/tree/main/choreo_k/modify.py#L283" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_intersect</code>(<strong><code>a</code></strong>, <strong><code>b</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -221,7 +221,7 @@ The modifications are done for all figures in a single frame.</p>
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="get_union" class="doc_header"><code>get_union</code><a href="https://github.com/broadwell/choreo_k/tree/main/choreo_k/modify.py#L295" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_union</code>(<strong><code>a</code></strong>, <strong><code>b</code></strong>)</p>
+<h4 id="get_union" class="doc_header"><code>get_union</code><a href="https://github.com/broadwell/choreo_k/tree/main/choreo_k/modify.py#L296" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_union</code>(<strong><code>a</code></strong>, <strong><code>b</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -245,7 +245,7 @@ The modifications are done for all figures in a single frame.</p>
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="shift_figure" class="doc_header"><code>shift_figure</code><a href="https://github.com/broadwell/choreo_k/tree/main/choreo_k/modify.py#L311" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>shift_figure</code>(<strong><code>coords_and_confidence</code></strong>, <strong><code>dx</code></strong>, <strong><code>dy</code></strong>)</p>
+<h4 id="shift_figure" class="doc_header"><code>shift_figure</code><a href="https://github.com/broadwell/choreo_k/tree/main/choreo_k/modify.py#L312" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>shift_figure</code>(<strong><code>coords_and_confidence</code></strong>, <strong><code>dx</code></strong>, <strong><code>dy</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -269,7 +269,7 @@ The modifications are done for all figures in a single frame.</p>
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="average_coords" class="doc_header"><code>average_coords</code><a href="https://github.com/broadwell/choreo_k/tree/main/choreo_k/modify.py#L332" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>average_coords</code>(<strong><code>coord1</code></strong>, <strong><code>coord2</code></strong>)</p>
+<h4 id="average_coords" class="doc_header"><code>average_coords</code><a href="https://github.com/broadwell/choreo_k/tree/main/choreo_k/modify.py#L333" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>average_coords</code>(<strong><code>coord1</code></strong>, <strong><code>coord2</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -293,7 +293,7 @@ The modifications are done for all figures in a single frame.</p>
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="count_figures_and_time" class="doc_header"><code>count_figures_and_time</code><a href="https://github.com/broadwell/choreo_k/tree/main/choreo_k/modify.py#L336" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>count_figures_and_time</code>(<strong><code>input_frames</code></strong>)</p>
+<h4 id="count_figures_and_time" class="doc_header"><code>count_figures_and_time</code><a href="https://github.com/broadwell/choreo_k/tree/main/choreo_k/modify.py#L337" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>count_figures_and_time</code>(<strong><code>input_frames</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -317,7 +317,7 @@ The modifications are done for all figures in a single frame.</p>
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="nose_btwn_eyes_ears_shoulders" class="doc_header"><code>nose_btwn_eyes_ears_shoulders</code><a href="https://github.com/broadwell/choreo_k/tree/main/choreo_k/modify.py#L350" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>nose_btwn_eyes_ears_shoulders</code>(<strong><code>coords</code></strong>, <strong><code>missing_coords</code></strong>)</p>
+<h4 id="nose_btwn_eyes_ears_shoulders" class="doc_header"><code>nose_btwn_eyes_ears_shoulders</code><a href="https://github.com/broadwell/choreo_k/tree/main/choreo_k/modify.py#L351" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>nose_btwn_eyes_ears_shoulders</code>(<strong><code>coords</code></strong>, <strong><code>missing_coords</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -341,7 +341,7 @@ The modifications are done for all figures in a single frame.</p>
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="left_eye_btwn_nose_shoulder" class="doc_header"><code>left_eye_btwn_nose_shoulder</code><a href="https://github.com/broadwell/choreo_k/tree/main/choreo_k/modify.py#L371" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>left_eye_btwn_nose_shoulder</code>(<strong><code>coords</code></strong>, <strong><code>missing_coords</code></strong>)</p>
+<h4 id="left_eye_btwn_nose_shoulder" class="doc_header"><code>left_eye_btwn_nose_shoulder</code><a href="https://github.com/broadwell/choreo_k/tree/main/choreo_k/modify.py#L372" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>left_eye_btwn_nose_shoulder</code>(<strong><code>coords</code></strong>, <strong><code>missing_coords</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -365,7 +365,7 @@ The modifications are done for all figures in a single frame.</p>
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="right_eye_btwn_nose_shoulder" class="doc_header"><code>right_eye_btwn_nose_shoulder</code><a href="https://github.com/broadwell/choreo_k/tree/main/choreo_k/modify.py#L377" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>right_eye_btwn_nose_shoulder</code>(<strong><code>coords</code></strong>, <strong><code>missing_coords</code></strong>)</p>
+<h4 id="right_eye_btwn_nose_shoulder" class="doc_header"><code>right_eye_btwn_nose_shoulder</code><a href="https://github.com/broadwell/choreo_k/tree/main/choreo_k/modify.py#L378" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>right_eye_btwn_nose_shoulder</code>(<strong><code>coords</code></strong>, <strong><code>missing_coords</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -389,7 +389,7 @@ The modifications are done for all figures in a single frame.</p>
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="left_ear_btwn_eye_shoulder" class="doc_header"><code>left_ear_btwn_eye_shoulder</code><a href="https://github.com/broadwell/choreo_k/tree/main/choreo_k/modify.py#L383" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>left_ear_btwn_eye_shoulder</code>(<strong><code>coords</code></strong>, <strong><code>missing_coords</code></strong>)</p>
+<h4 id="left_ear_btwn_eye_shoulder" class="doc_header"><code>left_ear_btwn_eye_shoulder</code><a href="https://github.com/broadwell/choreo_k/tree/main/choreo_k/modify.py#L384" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>left_ear_btwn_eye_shoulder</code>(<strong><code>coords</code></strong>, <strong><code>missing_coords</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -413,7 +413,7 @@ The modifications are done for all figures in a single frame.</p>
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="right_ear_btwn_eye_shoulder" class="doc_header"><code>right_ear_btwn_eye_shoulder</code><a href="https://github.com/broadwell/choreo_k/tree/main/choreo_k/modify.py#L389" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>right_ear_btwn_eye_shoulder</code>(<strong><code>coords</code></strong>, <strong><code>missing_coords</code></strong>)</p>
+<h4 id="right_ear_btwn_eye_shoulder" class="doc_header"><code>right_ear_btwn_eye_shoulder</code><a href="https://github.com/broadwell/choreo_k/tree/main/choreo_k/modify.py#L390" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>right_ear_btwn_eye_shoulder</code>(<strong><code>coords</code></strong>, <strong><code>missing_coords</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -437,7 +437,7 @@ The modifications are done for all figures in a single frame.</p>
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="left_elbow_btwn_shoulder_wrist" class="doc_header"><code>left_elbow_btwn_shoulder_wrist</code><a href="https://github.com/broadwell/choreo_k/tree/main/choreo_k/modify.py#L395" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>left_elbow_btwn_shoulder_wrist</code>(<strong><code>coords</code></strong>, <strong><code>missing_coords</code></strong>)</p>
+<h4 id="left_elbow_btwn_shoulder_wrist" class="doc_header"><code>left_elbow_btwn_shoulder_wrist</code><a href="https://github.com/broadwell/choreo_k/tree/main/choreo_k/modify.py#L396" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>left_elbow_btwn_shoulder_wrist</code>(<strong><code>coords</code></strong>, <strong><code>missing_coords</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -461,7 +461,7 @@ The modifications are done for all figures in a single frame.</p>
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="right_elbow_btwn_shoulder_wrist" class="doc_header"><code>right_elbow_btwn_shoulder_wrist</code><a href="https://github.com/broadwell/choreo_k/tree/main/choreo_k/modify.py#L401" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>right_elbow_btwn_shoulder_wrist</code>(<strong><code>coords</code></strong>, <strong><code>missing_coords</code></strong>)</p>
+<h4 id="right_elbow_btwn_shoulder_wrist" class="doc_header"><code>right_elbow_btwn_shoulder_wrist</code><a href="https://github.com/broadwell/choreo_k/tree/main/choreo_k/modify.py#L402" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>right_elbow_btwn_shoulder_wrist</code>(<strong><code>coords</code></strong>, <strong><code>missing_coords</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -485,7 +485,7 @@ The modifications are done for all figures in a single frame.</p>
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="left_hip_btwn_shoulder_knee_ankle" class="doc_header"><code>left_hip_btwn_shoulder_knee_ankle</code><a href="https://github.com/broadwell/choreo_k/tree/main/choreo_k/modify.py#L407" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>left_hip_btwn_shoulder_knee_ankle</code>(<strong><code>coords</code></strong>, <strong><code>missing_coords</code></strong>)</p>
+<h4 id="left_hip_btwn_shoulder_knee_ankle" class="doc_header"><code>left_hip_btwn_shoulder_knee_ankle</code><a href="https://github.com/broadwell/choreo_k/tree/main/choreo_k/modify.py#L408" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>left_hip_btwn_shoulder_knee_ankle</code>(<strong><code>coords</code></strong>, <strong><code>missing_coords</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -509,7 +509,7 @@ The modifications are done for all figures in a single frame.</p>
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="right_hip_btwn_shoulder_knee_ankle" class="doc_header"><code>right_hip_btwn_shoulder_knee_ankle</code><a href="https://github.com/broadwell/choreo_k/tree/main/choreo_k/modify.py#L417" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>right_hip_btwn_shoulder_knee_ankle</code>(<strong><code>coords</code></strong>, <strong><code>missing_coords</code></strong>)</p>
+<h4 id="right_hip_btwn_shoulder_knee_ankle" class="doc_header"><code>right_hip_btwn_shoulder_knee_ankle</code><a href="https://github.com/broadwell/choreo_k/tree/main/choreo_k/modify.py#L418" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>right_hip_btwn_shoulder_knee_ankle</code>(<strong><code>coords</code></strong>, <strong><code>missing_coords</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -533,7 +533,7 @@ The modifications are done for all figures in a single frame.</p>
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="left_ankle_from_knee" class="doc_header"><code>left_ankle_from_knee</code><a href="https://github.com/broadwell/choreo_k/tree/main/choreo_k/modify.py#L427" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>left_ankle_from_knee</code>(<strong><code>coords</code></strong>, <strong><code>missing_coords</code></strong>)</p>
+<h4 id="left_ankle_from_knee" class="doc_header"><code>left_ankle_from_knee</code><a href="https://github.com/broadwell/choreo_k/tree/main/choreo_k/modify.py#L428" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>left_ankle_from_knee</code>(<strong><code>coords</code></strong>, <strong><code>missing_coords</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -557,7 +557,7 @@ The modifications are done for all figures in a single frame.</p>
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="right_ankle_from_knee" class="doc_header"><code>right_ankle_from_knee</code><a href="https://github.com/broadwell/choreo_k/tree/main/choreo_k/modify.py#L434" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>right_ankle_from_knee</code>(<strong><code>coords</code></strong>, <strong><code>missing_coords</code></strong>)</p>
+<h4 id="right_ankle_from_knee" class="doc_header"><code>right_ankle_from_knee</code><a href="https://github.com/broadwell/choreo_k/tree/main/choreo_k/modify.py#L435" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>right_ankle_from_knee</code>(<strong><code>coords</code></strong>, <strong><code>missing_coords</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -581,7 +581,7 @@ The modifications are done for all figures in a single frame.</p>
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="correct_pose" class="doc_header"><code>correct_pose</code><a href="https://github.com/broadwell/choreo_k/tree/main/choreo_k/modify.py#L443" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>correct_pose</code>(<strong><code>input_coords</code></strong>)</p>
+<h4 id="correct_pose" class="doc_header"><code>correct_pose</code><a href="https://github.com/broadwell/choreo_k/tree/main/choreo_k/modify.py#L444" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>correct_pose</code>(<strong><code>input_coords</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -605,7 +605,7 @@ The modifications are done for all figures in a single frame.</p>
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="add_flipped_zeroified_figures" class="doc_header"><code>add_flipped_zeroified_figures</code><a href="https://github.com/broadwell/choreo_k/tree/main/choreo_k/modify.py#L503" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>add_flipped_zeroified_figures</code>(<strong><code>input_frames</code></strong>, <strong><code>add_flipped</code></strong>=<em><code>True</code></em>, <strong><code>add_zerofied</code></strong>=<em><code>True</code></em>)</p>
+<h4 id="add_flipped_zeroified_figures" class="doc_header"><code>add_flipped_zeroified_figures</code><a href="https://github.com/broadwell/choreo_k/tree/main/choreo_k/modify.py#L504" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>add_flipped_zeroified_figures</code>(<strong><code>input_frames</code></strong>, <strong><code>add_flipped</code></strong>=<em><code>True</code></em>, <strong><code>add_zerofied</code></strong>=<em><code>True</code></em>)</p>
 </blockquote>
 
 </div>
@@ -629,7 +629,55 @@ The modifications are done for all figures in a single frame.</p>
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="interpolate_missing_coords" class="doc_header"><code>interpolate_missing_coords</code><a href="https://github.com/broadwell/choreo_k/tree/main/choreo_k/modify.py#L517" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>interpolate_missing_coords</code>(<strong><code>input_frames</code></strong>, <strong><code>threshold</code></strong>=<em><code>0.5</code></em>, <strong><code>flip_figures</code></strong>=<em><code>False</code></em>, <strong><code>check_bbox</code></strong>=<em><code>False</code></em>, <strong><code>all_visible</code></strong>=<em><code>True</code></em>, <strong><code>overlap_threshold</code></strong>=<em><code>0.7</code></em>, <strong><code>video_file</code></strong>=<em><code>None</code></em>)</p>
+<h4 id="interpolate_missing_coords" class="doc_header"><code>interpolate_missing_coords</code><a href="https://github.com/broadwell/choreo_k/tree/main/choreo_k/modify.py#L518" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>interpolate_missing_coords</code>(<strong><code>input_frames</code></strong>, <strong><code>threshold</code></strong>=<em><code>0.5</code></em>, <strong><code>flip_figures</code></strong>=<em><code>False</code></em>, <strong><code>check_bbox</code></strong>=<em><code>False</code></em>, <strong><code>all_visible</code></strong>=<em><code>True</code></em>, <strong><code>overlap_threshold</code></strong>=<em><code>0.7</code></em>, <strong><code>video_file</code></strong>=<em><code>None</code></em>)</p>
+</blockquote>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="output_alphapose_json" class="doc_header"><code>output_alphapose_json</code><a href="https://github.com/broadwell/choreo_k/tree/main/choreo_k/modify.py#L700" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>output_alphapose_json</code>(<strong><code>poses_series</code></strong>, <strong><code>figure_type</code></strong>=<em><code>'figures'</code></em>)</p>
+</blockquote>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="add_poseflow_figures" class="doc_header"><code>add_poseflow_figures</code><a href="https://github.com/broadwell/choreo_k/tree/main/choreo_k/modify.py#L722" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>add_poseflow_figures</code>(<strong><code>input_detections</code></strong>, <strong><code>json_path</code></strong>)</p>
 </blockquote>
 
 </div>
