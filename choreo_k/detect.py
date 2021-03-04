@@ -5,24 +5,10 @@ __all__ = ['Detector']
 # Cell
 import torch
 import openpifpaf
-from openpifpaf.datasets.constants import COCO_KEYPOINTS, COCO_PERSON_SKELETON
 
-# May not need all of these here...
-#import io
-import numpy as np
-#import PIL
 from PIL import Image
-#import pickle
-#import matplotlib.pyplot as plt
-import math
 import cv2
 import os
-
-import warnings
-warnings.filterwarnings(
-  action='ignore', module='matplotlib.figure', category=UserWarning,
-  message=('This figure includes Axes that are not compatible with tight_layout, '
-           'so results might be incorrect.'))
 
 class Detector:
     """Given a still image (or video frame), finds poses.
@@ -74,10 +60,16 @@ class Detector:
         return detections
 
     def get_poses_from_video(video_file, start_seconds=0.0, end_seconds=0.0, max_frames=0, seconds_to_skip=0.0, images_too=False, write_images=False, folder_name='video_folder'):
-        """ Given a video file, extracts video frames as images at seconds_to_skip intervals,
-            from start_seconds to end_seconds. Returns a list of pose data items containing
-            {frame_id, time, figures, |image|}.
-            Can also be instructed to write the extracted images to a folder.
+        """ Given a video file, extracts video frames as images at `seconds_to_skip` intervals,
+            from `start_seconds` to `end_seconds`, and runs `__detect_one_or_more_images__()` on each.
+            Returns a list of frame pose data items, which are dictionaries with the following elements:
+            { 'frame_id': <the frame's position in this list (not in the entire video, if seconds_to_skip != 0)>,
+              'time': <the frame's timecode within the excerpt (not within the full video, if start_seconds != 0)>,
+              'figures': [<OpenPifPaf pose detection objects> for all figures detected in the frame]
+              <OPTIONAL> 'image': <a PIL image object for the frame>
+            }
+            `write_images`, if true, causes the extracted frame images to be written to a folder
+            specified by `folder_name`, with the naming scheme `image00001.png`
         """
 
         cap = cv2.VideoCapture(video_file)
@@ -102,9 +94,9 @@ class Detector:
             for filename in os.listdir(folder_name):
                 file_path = os.path.join(folder_name, filename)
                 if os.path.isfile(file_path) or os.path.islink(file_path):
-                  os.unlink(file_path)
+                    os.unlink(file_path)
 
-        while(cap.isOpened() and (frame_count < total_frames)):
+        while cap.isOpened() and (frame_count < total_frames):
             ret_val, im = cap.read()
 
             timecode = frame_count * frame_duration
@@ -116,7 +108,7 @@ class Detector:
             if timecode < start_seconds:
                 continue
 
-            if (im is None):
+            if m is None:
                 # Might want to retry here
                 # print("Missed a frame, continuing...")
                 # For now, we'll count a missed frame as a processed frame
@@ -136,8 +128,6 @@ class Detector:
             pil_image = Image.fromarray(rgbim)
 
             detections = self.__detect_one_or_more_images__([pil_image])
-            #flipped_detections = flip_detections(detections)
-            #zeroified_detections = zeroify_detections(detections)
 
             print("Frame",frame_count,"of",total_frames,round(timecode,2),"figures",len(detections))
 

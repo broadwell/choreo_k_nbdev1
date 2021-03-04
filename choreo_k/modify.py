@@ -6,72 +6,17 @@ __all__ = ['get_figure_coords', 'flip_detections', 'zeroify_detections', 'get_bb
            'left_ear_btwn_eye_shoulder', 'right_ear_btwn_eye_shoulder', 'left_elbow_btwn_shoulder_wrist',
            'right_elbow_btwn_shoulder_wrist', 'left_hip_btwn_shoulder_knee_ankle', 'right_hip_btwn_shoulder_knee_ankle',
            'left_ankle_from_knee', 'right_ankle_from_knee', 'correct_pose', 'add_flipped_zeroified_figures',
-           'interpolate_missing_coords', 'output_alphapose_json', 'add_poseflow_figures', 'TOTAL_COORDS', 'D_THRESH',
-           'coco_points', 'coco_pts_short']
+           'interpolate_missing_coords', 'output_alphapose_json', 'add_poseflow_figures', 'TOTAL_COORDS', 'D_THRESH']
 
 # Cell
+import openpifpaf
 from openpifpaf.datasets.constants import COCO_KEYPOINTS, COCO_PERSON_SKELETON
 
-# May not need all of these here...
-#import io
 import numpy as np
-#import PIL
-from PIL import Image
-#import pickle
-#import matplotlib.pyplot as plt
-import math
-import cv2
-import os
-
-import warnings
-warnings.filterwarnings(
-  action='ignore', module='matplotlib.figure', category=UserWarning,
-  message=('This figure includes Axes that are not compatible with tight_layout, '
-           'so results might be incorrect.'))
+import json
 
 TOTAL_COORDS = 17
 D_THRESH = 0.01
-
-coco_points = {
-    0: 'nose',
-    1: 'left_eye',
-    2: 'right_eye',
-    3: 'left_ear',
-    4: 'right_ear',
-    5: 'left_shoulder',
-    6: 'right_shoulder',
-    7: 'left_elbow',
-    8: 'right_elbow',
-    9: 'left_wrist',
-    10: 'right_wrist',
-    11: 'left_hip',
-    12: 'right_hip',
-    13: 'left_knee',
-    14: 'right_knee',
-    15: 'left_ankle',
-    16: 'right_ankle'
-}
-
-coco_pts_short = {
-    0: 'nose',
-    1: 'l_eye',
-    2: 'r_eye',
-    3: 'l_ear',
-    4: 'r_ear',
-    5: 'l_shldr',
-    6: 'r_shldr',
-    7: 'l_elbow',
-    8: 'r_elbow',
-    9: 'l_wrist',
-    10: 'r_wrist',
-    11: 'l_hip',
-    12: 'r_hip',
-    13: 'l_knee',
-    14: 'r_knee',
-    15: 'l_ankle',
-    16: 'r_ankle'
-}
-
 
 def get_figure_coords(coords_and_confidence, margin=0):
 

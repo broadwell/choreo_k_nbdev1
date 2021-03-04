@@ -4,23 +4,15 @@ __all__ = ['plot_poses', 'plot_delaunay', 'fig2img', 'excerpt_pose', 'overlay_po
            'viz_dist_matrices', 'GC_INTERVAL', 'MIN_MOVE', 'MAX_MOVE']
 
 # Cell
-from openpifpaf.datasets.constants import COCO_KEYPOINTS, COCO_PERSON_SKELETON
+import openpifpaf
 
-# May not need all of these here...
-#import io
 import numpy as np
-#import PIL
 from PIL import Image
-#import pickle
 import matplotlib.pyplot as plt
-import math
 import cv2
 import os
 
 from scipy.spatial import Delaunay
-from scipy.sparse import lil_matrix
-from scipy import triu
-import networkx as nx
 
 import warnings
 warnings.filterwarnings(

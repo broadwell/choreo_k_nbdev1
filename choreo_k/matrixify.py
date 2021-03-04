@@ -3,28 +3,12 @@
 __all__ = ['matrixify_pose', 'get_pose_matrix', 'get_laplacian_matrix', 'compare_laplacians']
 
 # Cell
-from openpifpaf.datasets.constants import COCO_KEYPOINTS, COCO_PERSON_SKELETON
-
-# May not need all of these here...
-#import io
 import numpy as np
-#import PIL
-from PIL import Image
-#import pickle
-#import matplotlib.pyplot as plt
-import math
-import cv2
 import os
-
-import warnings
-warnings.filterwarnings(
-  action='ignore', module='matplotlib.figure', category=UserWarning,
-  message=('This figure includes Axes that are not compatible with tight_layout, '
-           'so results might be incorrect.'))
-
-from scipy.spatial.distance import pdist, squareform
-from skbio.stats.distance import mantel
+from scipy.spatial.distance import pdist
 from sklearn.preprocessing import normalize
+from scipy.sparse import lil_matrix
+import networkx as nx
 
 def matrixify_pose(coords_and_confidence):
     """ DISTANCE MATRIX: compute a pose's L1-normed inter-keypoint distance matrix.

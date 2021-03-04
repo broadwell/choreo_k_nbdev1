@@ -7,26 +7,21 @@ __all__ = ['smooth_series', 'corr_time_series_matrix', 'fill_nans_scipy1', 'move
            'average_frame_movements', 'member_frame_movements', 'CELL_HEIGHT']
 
 # Cell
+import openpifpaf
 from openpifpaf.datasets.constants import COCO_KEYPOINTS, COCO_PERSON_SKELETON
 
-# May not need all of these here...
-#import io
 import numpy as np
-#import PIL
-from PIL import Image
-#import pickle
-#import matplotlib.pyplot as plt
-import math
-import cv2
-import os
+import matplotlib.pyplot as plt
+from skbio.stats.distance import mantel
+from scipy.spatial.distance import squareform
+from scipy.interpolate import interp1d
+from sklearn.cluster import OPTICS
 
 import warnings
 warnings.filterwarnings(
   action='ignore', module='matplotlib.figure', category=UserWarning,
   message=('This figure includes Axes that are not compatible with tight_layout, '
            'so results might be incorrect.'))
-
-from scipy.interpolate import interp1d
 
 def smooth_series(x, window_len=11, window='flat'):
     """ Smooth a time series via a sliding window average
@@ -288,9 +283,6 @@ def average_poses(pose_series, descriptors, source_figures='zeroified_figures', 
     if flip:
         this_annotation = flip_detections([this_annotation])[0]
     return this_annotation
-
-
-from sklearn.cluster import OPTICS
 
 def get_feature_vectors(pose_series, figure_type='aligned_figures', method='distance'):
     # Convert matrices into feature vectors to send to the clustering algorithm

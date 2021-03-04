@@ -40,7 +40,7 @@ nb_path: "02_matrixify.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="matrixify_pose" class="doc_header"><code>matrixify_pose</code><a href="https://github.com/broadwell/choreo_k/tree/main/choreo_k/matrixify.py#L29" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>matrixify_pose</code>(<strong><code>coords_and_confidence</code></strong>)</p>
+<h4 id="matrixify_pose" class="doc_header"><code>matrixify_pose</code><a href="https://github.com/broadwell/choreo_k/tree/main/choreo_k/matrixify.py#L13" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>matrixify_pose</code>(<strong><code>coords_and_confidence</code></strong>)</p>
 </blockquote>
 <p>DISTANCE MATRIX: compute a pose's L1-normed inter-keypoint distance matrix.
 To compare any two poses, we can measure the degree of correlation between
@@ -71,7 +71,7 @@ can be represented by a condensed distance matrix (or vector) of 136 elements.</
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="get_pose_matrix" class="doc_header"><code>get_pose_matrix</code><a href="https://github.com/broadwell/choreo_k/tree/main/choreo_k/matrixify.py#L46" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_pose_matrix</code>(<strong><code>frame</code></strong>, <strong><code>figure_index</code></strong>=<em><code>0</code></em>, <strong><code>figure_type</code></strong>=<em><code>'flipped_figures'</code></em>)</p>
+<h4 id="get_pose_matrix" class="doc_header"><code>get_pose_matrix</code><a href="https://github.com/broadwell/choreo_k/tree/main/choreo_k/matrixify.py#L30" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_pose_matrix</code>(<strong><code>frame</code></strong>, <strong><code>figure_index</code></strong>=<em><code>0</code></em>, <strong><code>figure_type</code></strong>=<em><code>'flipped_figures'</code></em>)</p>
 </blockquote>
 
 </div>
@@ -95,7 +95,7 @@ can be represented by a condensed distance matrix (or vector) of 136 elements.</
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="get_laplacian_matrix" class="doc_header"><code>get_laplacian_matrix</code><a href="https://github.com/broadwell/choreo_k/tree/main/choreo_k/matrixify.py#L53" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_laplacian_matrix</code>(<strong><code>frame</code></strong>, <strong><code>normalized</code></strong>=<em><code>True</code></em>, <strong><code>show</code></strong>=<em><code>False</code></em>, <strong><code>figure_index</code></strong>=<em><code>0</code></em>, <strong><code>figure_type</code></strong>=<em><code>'flipped_figures'</code></em>)</p>
+<h4 id="get_laplacian_matrix" class="doc_header"><code>get_laplacian_matrix</code><a href="https://github.com/broadwell/choreo_k/tree/main/choreo_k/matrixify.py#L37" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_laplacian_matrix</code>(<strong><code>frame</code></strong>, <strong><code>normalized</code></strong>=<em><code>True</code></em>, <strong><code>show</code></strong>=<em><code>False</code></em>, <strong><code>figure_index</code></strong>=<em><code>0</code></em>, <strong><code>figure_type</code></strong>=<em><code>'flipped_figures'</code></em>)</p>
 </blockquote>
 <p>LAPLACIAN: compute the Delaunay triangulation between keypoints, then
 use the connections to build an adjacency matrix, which is then converted
@@ -125,7 +125,7 @@ similarity or difference between them.</p>
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="compare_laplacians" class="doc_header"><code>compare_laplacians</code><a href="https://github.com/broadwell/choreo_k/tree/main/choreo_k/matrixify.py#L98" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>compare_laplacians</code>(<strong><code>p1</code></strong>, <strong><code>p2</code></strong>, <strong><code>figure_index</code></strong>=<em><code>0</code></em>, <strong><code>figure_type</code></strong>=<em><code>'flipped_figures'</code></em>, <strong><code>show</code></strong>=<em><code>False</code></em>)</p>
+<h4 id="compare_laplacians" class="doc_header"><code>compare_laplacians</code><a href="https://github.com/broadwell/choreo_k/tree/main/choreo_k/matrixify.py#L82" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>compare_laplacians</code>(<strong><code>p1</code></strong>, <strong><code>p2</code></strong>, <strong><code>figure_index</code></strong>=<em><code>0</code></em>, <strong><code>figure_type</code></strong>=<em><code>'flipped_figures'</code></em>, <strong><code>show</code></strong>=<em><code>False</code></em>)</p>
 </blockquote>
 
 </div>
