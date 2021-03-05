@@ -2,18 +2,18 @@
 > Tools for pose detection and choreographic analysis of dance videos.
 
 
-This file will become your README and also the index of your documentation.
+Code developed for "Comparative K-Pop Choreography Analysis through Deep-Learning Pose Estimation across A Large Video Corpus"
 
 ## Install
 
-`pip install your_project_name`
+`pip install choreo_k`
 
 ## How to use
 
-Fill me in please! Don't forget code examples:
+TBD
 
 ```python
-1+1
+# Code examples go here
 ```
 
 

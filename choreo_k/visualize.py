@@ -11,7 +11,7 @@ from PIL import Image
 import matplotlib.pyplot as plt
 import cv2
 import os
-
+#from IPython.display import display
 from scipy.spatial import Delaunay
 
 import warnings
@@ -274,9 +274,6 @@ def draw_figure(point_weights=None, show=True):
 
 
 # Distance matrix-based comparison tests
-
-from skbio import DistanceMatrix
-from IPython.display import display
 
 def viz_dist_matrices(p1, p2):
     dmatrix1 = squareform(get_pose_matrix(p1))
