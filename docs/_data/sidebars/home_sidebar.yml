@@ -24,9 +24,6 @@ entries:
     - output: web,pdf
       title: analyze
       url: analyze.html
-    - output: web,pdf
-      title: Title
-      url: Pose_analysis_examples.html
     output: web
     title: choreo_k
   output: web
