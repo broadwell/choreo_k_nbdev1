@@ -2,6 +2,8 @@
 > Tools for pose detection and choreographic analysis of dance videos
 
 
+![Excerpts from analyses of BTS's Fire and Jennie's SOLO](docs/images/BTS_Jennie_excerpts.gif)
+
 ## Cite
 
 This repository contains code and data used in the paper [Comparative K-Pop Choreography Analysis through Deep-Learning Pose Estimation across A Large Video Corpus](http://www.digitalhumanities.org/dhq/vol/15/1/000506/000506.html):
@@ -17,9 +19,9 @@ This repository contains code and data used in the paper [Comparative K-Pop Chor
 
 ## Try
 
-The full Python code package documented here is still under development. To try out the pose analysis code in the meantime, we recommend opening the notebook at [examples/Pose_analysis_examples.ipynb](https://github.com/broadwell/choreo_k/blob/main/examples/Pose_analysis_examples.ipynb). The code is most likely to work in Google Colab:
+The full Python code package documented here is still under development. To try out the pose analysis code in the meantime, we recommend opening the notebook [Pose_analysis_examples.ipynb](https://github.com/broadwell/choreo_k_backup/blob/main/Pose_analysis_examples.ipynb) in Google Colab:
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/broadwell/choreo_k/blob/main/examples/Pose_analysis_examples.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/broadwell/choreo_k_backup/blob/main/Pose_analysis_examples.ipynb)
 
 ## Documentation
 
